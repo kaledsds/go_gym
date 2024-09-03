@@ -1,21 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- ======= Blog Section ======= -->
-<section class="breadcrumbs">
+
+<!-- Page Title -->
+<div class="page-title light-background">
     <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Modification d'un Client</h2>
-
+        <nav class="breadcrumbs">
             <ol>
-                <li><a href="/">Home</a></li>
-                <li>Clients</li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/clients">Clients</a></li>
+                <li class="current">Modifier</li>
             </ol>
-        </div>
-
+        </nav>
+        <h1>Modification d'un Client</h1>
     </div>
-</section><!-- End Blog Section -->
+</div><!-- End Page Title -->
 <div class="row m-0 p-4">
     <div class="col-12">
 
@@ -65,7 +64,8 @@
 
                                 <div class="form-group">
                                     <label for="tel">Sport:</label>
-                                    <select name="sport_id" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <select name="sport_id" class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
                                         <option selected>Open sport menu</option>
                                         @foreach ($sports as $sport)
                                         <option value="{{ $sport->id }}">{{ $sport->nom }}</option>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group py-4">
-                                    <button type="submit" class="btn btn-primary">Modification du client</button>
+                                    <button type="submit" class="btn btn-success">Modification du client</button>
                                 </div>
                             </div>
                         </div>

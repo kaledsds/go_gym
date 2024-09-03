@@ -1,22 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- ======= Blog Section ======= -->
-<section class="breadcrumbs">
-    <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Gestion des produits</h2>
+<!-- Page Title -->
+<div class="page-title light-background">
+    <div class="container">
+        <nav class="breadcrumbs">
             <ol>
-                <li><a href="/">Home</a></li>
-                <li>produits</li>
+                <li><a href="/home">Home</a></li>
+                <li class="current">Produits</li>
             </ol>
-        </div>
+        </nav>
+        <h1>Gestion des produits</h1>
     </div>
-</section><!-- End Blog Section -->
+</div><!-- End Page Title -->
 <div class="row m-0 p-4">
     <div class="col-md-12">
-        <a style="margin: 19px;" href="{{ route('produits.create')}}" class="btn btn-primary"><b>Ajouter une produit</b></a>
+        <a style="margin: 19px;" href="{{ route('produits.create')}}" class="btn btn-success"><b>Ajouter une produit</b></a>
     </div>
     <div class="container text-center p-4">
         <div class="row row-cols-5">

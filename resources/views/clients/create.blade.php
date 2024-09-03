@@ -2,22 +2,20 @@
 
 
 @section('content')
-<!-- ======= Blog Section ======= -->
-<section class="breadcrumbs">
+
+<!-- Page Title -->
+<div class="page-title light-background">
     <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Ajouter un client</h2>
-
+        <nav class="breadcrumbs">
             <ol>
-                <li><a href="/">Home</a></li>
-                <li><a href="/clients">Client</a></li>
-                <li>create</li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/clients">Clients</a></li>
+                <li class="current">Ajouter</li>
             </ol>
-        </div>
-
+        </nav>
+        <h1>Ajouter un client</h1>
     </div>
-</section><!-- End Blog Section -->
+</div><!-- End Page Title -->
 <div class="row m-0 p-4">
     <div class="col-md-12">
 
@@ -59,7 +57,8 @@
                         </div>
                         <div class="form-group">
                             <label for="tel">Sport:</label>
-                            <select name="sport_id" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <select name="sport_id" class="form-select" id="floatingSelect"
+                                aria-label="Floating label select example">
                                 <option selected>Open sport menu</option>
                                 @foreach ($sports as $sport)
                                 <option value="{{ $sport->id }}">{{ $sport->nom }}</option>
@@ -71,7 +70,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card" style="margin-top: 2rem;">
-                            <button type="submit" class="btn btn-primary">Ajouter le client</button>
+                            <button type="submit" class="btn btn-success">Ajouter le client</button>
                         </div>
                     </div>
                 </div>

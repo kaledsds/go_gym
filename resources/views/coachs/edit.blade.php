@@ -1,22 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- ======= Blog Section ======= -->
-<section class="breadcrumbs">
+
+<!-- Page Title -->
+<div class="page-title light-background">
     <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Modification d'un coach</h2>
-
+        <nav class="breadcrumbs">
             <ol>
                 <li><a href="/home">Home</a></li>
                 <li><a href="/coachs">Coachs</a></li>
-                <li>edit</li>
+                <li class="current">Modifier</li>
             </ol>
-        </div>
-
+        </nav>
+        <h1>Modification d'un coach</h1>
     </div>
-</section><!-- End Blog Section -->
+</div><!-- End Page Title -->
 <div class="row m-0 p-4">
     <div class="col-12">
         <div style="width:800px;">
@@ -67,7 +65,7 @@
                                     <input type="text" class="form-control" name="tel" value="{{ $coach->tel }}" />
                                 </div>
                                 <div style="margin-top: 2rem;">
-                                    <button type="submit" class="btn btn-primary">Modification du coach</button>
+                                    <button type="submit" class="btn btn-success">Modification du coach</button>
                                 </div>
 
                             </div>

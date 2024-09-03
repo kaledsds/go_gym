@@ -1,22 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- ======= Blog Section ======= -->
-<section class="breadcrumbs">
+
+<!-- Page Title -->
+<div class="page-title light-background">
     <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Ajouter une machine</h2>
-
+        <nav class="breadcrumbs">
             <ol>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sports">sport</a></li>
-                <li>create</li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/machines">Machines</a></li>
+                <li class="current">Ajouter</li>
             </ol>
-        </div>
-
+        </nav>
+        <h1>Ajouter une machine</h1>
     </div>
-</section><!-- End Blog Section -->
+</div><!-- End Page Title -->
 <div class="row m-0 p-4">
     <div class="col-md-12">
         <div>
@@ -40,7 +38,8 @@
                         <div class="form-group">
                             <label for="edresse">Image:</label>
                             <div class="input-group">
-                                <input name="image" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <input name="image" type="file" class="form-control" id="inputGroupFile04"
+                                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                             </div>
                         </div>
                     </div>
@@ -51,7 +50,7 @@
                         </div>
                         <div class="form-group">
                             <div class="card pt-4 border-0">
-                                <button type="submit" class="btn btn-primary">Ajouter le coach</button>
+                                <button type="submit" class="btn btn-success">Ajouter le coach</button>
                             </div>
                         </div>
                     </div>

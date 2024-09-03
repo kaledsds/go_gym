@@ -1,22 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- ======= Blog Section ======= -->
-<section class="breadcrumbs">
+
+<!-- Page Title -->
+<div class="page-title light-background">
     <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Modification d'un sport</h2>
-
+        <nav class="breadcrumbs">
             <ol>
                 <li><a href="/home">Home</a></li>
-                <li><a href="/sports">Sport</a></li>
-                <li>edit</li>
+                <li><a href="/sports">Sports</a></li>
+                <li class="current">Modifier</li>
             </ol>
-        </div>
-
+        </nav>
+        <h1>Modification d'un sport</h1>
     </div>
-</section><!-- End Blog Section -->
+</div><!-- End Page Title -->
 <div class="row justify-content-center">
     <div class="col-12">
         @if ($errors->any())
@@ -43,7 +41,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="tel">Sport:</label>
-                                    <select name="coach_id" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <select name="coach_id" class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
                                         <option selected>Open coach menu</option>
                                         @foreach ($coachs as $coach)
                                         <option value="{{ $coach->id }}">{{ $coach->nom }}</option>
@@ -61,7 +60,7 @@
                             <div class="col-md-6 ">
 
                                 <div class="form-group py-4">
-                                    <button type="submit" class="btn btn-primary">Modification du sport</button>
+                                    <button type="submit" class="btn btn-success">Modification du sport</button>
                                 </div>
                             </div>
                         </div>
